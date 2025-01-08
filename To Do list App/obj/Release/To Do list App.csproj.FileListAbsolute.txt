@@ -1,0 +1,14 @@
+C:\Users\Ivaka2\Documents\GitHub\To-Do-List\To Do list App\bin\Release\To Do list App.exe.config
+C:\Users\Ivaka2\Documents\GitHub\To-Do-List\To Do list App\bin\Release\To Do list App.exe.manifest
+C:\Users\Ivaka2\Documents\GitHub\To-Do-List\To Do list App\bin\Release\To Do list App.application
+C:\Users\Ivaka2\Documents\GitHub\To-Do-List\To Do list App\bin\Release\To Do list App.exe
+C:\Users\Ivaka2\Documents\GitHub\To-Do-List\To Do list App\bin\Release\To Do list App.pdb
+C:\Users\Ivaka2\Documents\GitHub\To-Do-List\To Do list App\obj\Release\To Do list App.csproj.AssemblyReference.cache
+C:\Users\Ivaka2\Documents\GitHub\To-Do-List\To Do list App\obj\Release\To_Do_list_App.ToDoList.resources
+C:\Users\Ivaka2\Documents\GitHub\To-Do-List\To Do list App\obj\Release\To_Do_list_App.Properties.Resources.resources
+C:\Users\Ivaka2\Documents\GitHub\To-Do-List\To Do list App\obj\Release\To Do list App.csproj.GenerateResource.cache
+C:\Users\Ivaka2\Documents\GitHub\To-Do-List\To Do list App\obj\Release\To Do list App.csproj.CoreCompileInputs.cache
+C:\Users\Ivaka2\Documents\GitHub\To-Do-List\To Do list App\obj\Release\To Do list App.exe.manifest
+C:\Users\Ivaka2\Documents\GitHub\To-Do-List\To Do list App\obj\Release\To Do list App.application
+C:\Users\Ivaka2\Documents\GitHub\To-Do-List\To Do list App\obj\Release\To Do list App.exe
+C:\Users\Ivaka2\Documents\GitHub\To-Do-List\To Do list App\obj\Release\To Do list App.pdb

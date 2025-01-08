@@ -21,8 +21,21 @@ namespace To_Do_list_App
         {
 
         }
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+       
 
         private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+        private void descriptionTextbox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }
@@ -44,12 +57,19 @@ namespace To_Do_list_App
         {
             try
             {
-                todoList.Rows.RemoveAt(dataGridView1.CurrentCell.RowIndex);
+                if(dataGridView1.CurrentCell != null)
+                {
+                    todoList.Rows.RemoveAt(dataGridView1.CurrentCell.RowIndex);
+                }
+                else
+                {
+                    consoleLog.Text = "Please select a valid row";
+                }
                 //todoList.Rows[dataGridView1.CurrentCell.RowIndex].Delete();
             }
             catch (Exception ex)
             {
-                Console.WriteLine("Error: " + ex);
+                consoleLog.Text = "Error: " + ex;
             }
         }
 
@@ -61,20 +81,22 @@ namespace To_Do_list_App
 
         private void editButton_Click(object sender, EventArgs e)
         {
-            isEditing = true;
-            // Fill text fields with data from table
-            titleTextbox.Text = todoList.Rows[dataGridView1.CurrentCell.RowIndex].ItemArray[0].ToString();
-            descriptionTextbox.Text = todoList.Rows[dataGridView1.CurrentCell.RowIndex].ItemArray[1].ToString();
-
-
+            if ((dataGridView1.CurrentCell != null) || dataGridView1.CurrentCell != null)
+            {
+                isEditing = true;
+                // Fill text fields with data from table
+                titleTextbox.Text = todoList.Rows[dataGridView1.CurrentCell.RowIndex].ItemArray[0].ToString();
+                descriptionTextbox.Text = todoList.Rows[dataGridView1.CurrentCell.RowIndex].ItemArray[1].ToString();
+            }
+                
         }
 
         private void saveButton_Click(object sender, EventArgs e)
         {
             if (isEditing)
             {
-                todoList.Rows[dataGridView1.CurrentCell.RowIndex]["Title"] = titleTextbox.Text;
-                todoList.Rows[dataGridView1.CurrentCell.RowIndex]["Description"] = descriptionTextbox.Text;
+                todoList.Rows[dataGridView1.CurrentCell.RowIndex]["Title"] = titleTextbox.Text.ToString();
+                todoList.Rows[dataGridView1.CurrentCell.RowIndex]["Description"] = descriptionTextbox.Text.ToString();
             }
             else
             {
@@ -83,6 +105,11 @@ namespace To_Do_list_App
             titleTextbox.Text = "";
             descriptionTextbox.Text = "";
             isEditing = false;
+        }
+
+        private void consoleLog_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

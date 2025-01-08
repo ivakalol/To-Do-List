@@ -42,14 +42,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="To Do list App.exe" size="12744">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="To Do list App.exe" size="13256">
       <assemblyIdentity name="To Do list App" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>bp+1Ou/ShRDc+wBAYdhJXEwzpfZSyi3eD6cZ3jNVvzI=</dsig:DigestValue>
+        <dsig:DigestValue>XrhTkTHt2bNsm+YPcfQhWVEfm00Z9CqsowA4/U4bNmw=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
