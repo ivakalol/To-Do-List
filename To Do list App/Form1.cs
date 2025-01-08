@@ -59,13 +59,30 @@ namespace To_Do_list_App
             descriptionTextbox.Text = "";
         }
 
+        private void editButton_Click(object sender, EventArgs e)
+        {
+            isEditing = true;
+            // Fill text fields with data from table
+            titleTextbox.Text = todoList.Rows[dataGridView1.CurrentCell.RowIndex].ItemArray[0].ToString();
+            descriptionTextbox.Text = todoList.Rows[dataGridView1.CurrentCell.RowIndex].ItemArray[1].ToString();
+
+
+        }
 
         private void saveButton_Click(object sender, EventArgs e)
         {
-
-            todoList.Rows.Add(titleTextbox.Text, descriptionTextbox.Text);
-            titleTextbox.Text = "Add some tittle here";
-            descriptionTextbox.Text = "Add some description here";
+            if (isEditing)
+            {
+                todoList.Rows[dataGridView1.CurrentCell.RowIndex]["Title"] = titleTextbox.Text;
+                todoList.Rows[dataGridView1.CurrentCell.RowIndex]["Description"] = descriptionTextbox.Text;
+            }
+            else
+            {
+                todoList.Rows.Add(titleTextbox.Text, descriptionTextbox.Text);
+            }
+            titleTextbox.Text = "";
+            descriptionTextbox.Text = "";
+            isEditing = false;
         }
     }
 }
