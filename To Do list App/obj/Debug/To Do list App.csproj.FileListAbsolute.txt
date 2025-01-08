@@ -8,3 +8,7 @@ C:\Git Hub\To-Do-List\To Do list App\obj\Debug\To Do list App.csproj.GenerateRes
 C:\Git Hub\To-Do-List\To Do list App\obj\Debug\To Do list App.csproj.CoreCompileInputs.cache
 C:\Git Hub\To-Do-List\To Do list App\obj\Debug\To Do list App.exe
 C:\Git Hub\To-Do-List\To Do list App\obj\Debug\To Do list App.pdb
+C:\Git Hub\To-Do-List\To Do list App\bin\Debug\To Do list App.exe.manifest
+C:\Git Hub\To-Do-List\To Do list App\bin\Debug\To Do list App.application
+C:\Git Hub\To-Do-List\To Do list App\obj\Debug\To Do list App.exe.manifest
+C:\Git Hub\To-Do-List\To Do list App\obj\Debug\To Do list App.application
