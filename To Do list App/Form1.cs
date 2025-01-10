@@ -81,13 +81,21 @@ namespace To_Do_list_App
 
         private void editButton_Click(object sender, EventArgs e)
         {
-            if ((dataGridView1.CurrentCell != null) || dataGridView1.CurrentCell != null)
+            try
             {
-                isEditing = true;
-                // Fill text fields with data from table
-                titleTextbox.Text = todoList.Rows[dataGridView1.CurrentCell.RowIndex].ItemArray[0].ToString();
-                descriptionTextbox.Text = todoList.Rows[dataGridView1.CurrentCell.RowIndex].ItemArray[1].ToString();
+                if ((dataGridView1.CurrentCell != null) || dataGridView1.CurrentCell != null)
+                {
+                    isEditing = true;
+                    // Fill text fields with data from table
+                    titleTextbox.Text = todoList.Rows[dataGridView1.CurrentCell.RowIndex].ItemArray[0].ToString();
+                    descriptionTextbox.Text = todoList.Rows[dataGridView1.CurrentCell.RowIndex].ItemArray[1].ToString();
+                }
             }
+            catch (Exception)
+            {
+                consoleLog.Text = "Please select an entire row";
+            }
+            
                 
         }
 
@@ -95,8 +103,8 @@ namespace To_Do_list_App
         {
             if (isEditing)
             {
-                todoList.Rows[dataGridView1.CurrentCell.RowIndex]["Title"] = titleTextbox.Text.ToString();
-                todoList.Rows[dataGridView1.CurrentCell.RowIndex]["Description"] = descriptionTextbox.Text.ToString();
+                todoList.Rows[dataGridView1.CurrentCell.RowIndex].ItemArray[0] = titleTextbox.Text.ToString();
+                todoList.Rows[dataGridView1.CurrentCell.RowIndex].ItemArray[1] = descriptionTextbox.Text.ToString();
             }
             else
             {
