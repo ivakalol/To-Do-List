@@ -12,7 +12,7 @@ A simple and efficient To-Do List application built using C# and Windows Forms t
 ## Installation
 1. Clone this repository:
    ```sh
-   git clone https://github.com/your-username/todo-list-winforms.git
+   git clone https://github.com/ivakalol/To-Do-List
    ```
 2. Open the project in Visual Studio.
 3. Restore NuGet packages if required.
@@ -36,9 +36,3 @@ A simple and efficient To-Do List application built using C# and Windows Forms t
 
 ## Contributing
 Contributions are welcome! Feel free to fork the repository and submit a pull request with improvements.
-
-## License
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## Contact
-For any issues or suggestions, please open an issue in the repository or contact me at [your-email@example.com](mailto:your-email@example.com).
